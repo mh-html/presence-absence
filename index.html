@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel="stylesheet" href="./style.css">
+    <title>حضورغیاب تحت وب</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- section 1 -->
+        <section class="main-page active-page">
+            <header>
+                <h1><i class="fas fa-clipboard"></i> حضورغیاب </h1>
+            </header>
+            <ul>
+                <li id="list-of-students"><h2><i class="fas fa-users"></i> لیست دانش آموزان </h2></li>
+                <li id="date-of-class"><h2><i class="far fa-calendar-alt"></i> تاریخ های برگزاری کلاس </h2></li>
+                <li id="add-new-student"><h2><i class="fas fa-user-plus"></i> افزودن دانش آموزان </h2></li>
+            </ul>
+        </section>
+
+        <!-- section 2  -->
+        <section class="add-page">
+            <header class="headP">
+                <h1><i class="fas fa-user-plus"></i> افزودن دانش آموزان </h1>
+                <p> صفحه اصلی <i class="fas fa-home"></i></p>
+            </header>
+            <form>
+                <div>
+                    <label for="names"><i class="far fa-user-circle"></i> نام و نام خانوادگی: </label>
+                    <input type="text" id="names">
+                </div>
+                <div>
+                    <label for="father"><i class="fas fa-user-alt"></i> نام پدر: </label>
+                    <input type="text" id="father">
+                </div>
+                <div>
+                    <label for="brithday"><i class="fas fa-calendar-plus"></i> تاریخ تولد: </label>
+                    <input type="text" id="brithday">
+                </div>
+                <div>
+                    <label for="tellphon"><i class="fas fa-phone"></i> شماره تماس: </label>
+                    <input type="tel" id="tellphon">
+                </div>
+            <button type="button" id="save-info"><i class="far fa-check-circle"></i> ثبت </button>
+            </form>
+            <h3><i class="fas fa-users"></i> تعداد دانش آموزان: <span id="num-st">0</span></h3>
+        </section>
+
+        <!-- section 3 -->
+        <section class="stu-page">
+            <header class="headP">
+                <h1><i class="fas fa-users"></i> لیست دانش آموزان </h1>
+                <p> صفحه اصلی <i class="fas fa-home"></i></p>
+            </header>
+            <h2><i class="fas fa-filter"></i> جستجوی دانش آموز </h2>
+            <input type="search" id="search-st" placeholder="اسم یا فامیل دانش آموز را وارد کنید">
+            <div>
+                <h2><i class="fas fa-folder-open"></i>  لیست دانش آموزان <span id="num-st2">0</span></h2>
+                <div class="lists-student">
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+        <section class="date-page">
+            <header class="headP">
+                <h1><i class="far fa-calendar-alt"></i> تاریخ های برگزاری کلاس </h1>
+                <p> صفحه اصلی <i class="fas fa-home"></i></p>
+            </header>
+            <h2><i class="far fa-calendar-plus"></i> ثبت تاریخ جدید </h2>
+            <div class="search">
+                <input type="text" id="date-input">
+                <button type="button" id="add-date">+</button>
+            </div>
+            <h2> <i class="far fa-calendar-alt"></i> لیست کلاس های تشکیل شده </i></h2>
+            <div class="dates"></div>
+        </section>
+
+        <!-- section 4-1 -->
+        <section class="list-hq">
+            <header class="headP">
+                <h1><i class="far fa-edit"></i> لیست حضور غیاب </h1>
+                <div class="top-info">
+                    <h4 id="date-top">---</h4>
+                    <h5 id="revous" style="cursor: pointer;"> بازگشت <i class="far fa-arrow-alt-circle-left"></i></h5>
+                </div>
+            </header>
+            <h2>لیست دانش آموزان <span id="num-of-st">0</span></h2>
+            <div class="info-st-container"></div>
+        </section>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

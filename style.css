@@ -1,0 +1,299 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    direction: rtl;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    width: 420px;
+    min-height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+    background-color: #EEEEEE;
+}
+
+/* Main Page */
+.main-page{
+    display: none;
+}
+.main-page header{
+    width: 100%;
+    height: 121px;
+    background-color: #B000FF;
+}
+.main-page header h1{
+    color: #fff;
+    line-height: 121px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.main-page ul{
+    padding: 20px 10px;
+}
+.main-page ul li{
+    border: 1px solid #000;
+    list-style: none;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 13px;
+    padding: 20px 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    cursor: pointer;
+}
+.main-page ul li::after{
+    content: "";
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.main-page ul li:nth-child(1)::after{
+    background-color: #FF9200;
+}
+.main-page ul li:nth-child(2)::after{
+    background-color: #00d807;
+}
+.main-page ul li:nth-child(3)::after{
+    background-color: #00A2FF;
+}
+.main-page ul li h2{
+    color: #737373;
+}
+
+/* Add Page */
+.add-page{
+    display: none;
+}
+.headP{
+    width: 100%;
+    height: 121px;
+    padding: 30px 0;
+    color: #fff;
+}
+.add-page .headP{
+    background-color: #00A2FF;
+}
+.headP p {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.add-page form{
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-align: right;
+}
+.add-page form div{
+    margin-bottom: 25px;
+}
+.add-page form div label{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.add-page form div input{
+    display: block;
+    width: 100%;
+    height: 41px;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    outline: none;
+}
+.add-page form div input:valid{
+    font-size: 25px;
+    padding-right: 10px;
+    color: #737373;
+}
+.add-page form button{
+    display: block;
+    margin: auto;
+    width: 121px;
+    height: 60px;
+    font-size: 35px;
+    background-color: #fff;
+    color: #00A2FF;
+    border: 1px solid #00A2FF;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.add-page h3{
+    font-size: 25px;
+    margin-top: 15px;
+    color: #707070;
+}
+
+/* List-student Page */
+.stu-page{
+    display: none;
+}
+.stu-page .headP{
+    background-color: #FF9200;
+}
+.stu-page h2{
+    margin-top: 25px;
+    text-align: right;
+    color: #FF9200;
+    margin: 20px;
+}
+.stu-page input{
+    width: 90%;
+    height: 60px;
+    border-radius: 39px;
+    border: 1px solid #707070;
+}
+.stu-page input::placeholder , .stu-page input:valid{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.stu-page .lists-student{
+    width: 100%;
+    padding: 10px 20px;
+}
+.stu-page .lists-student .list{
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #737373;
+    border-radius: 25px;
+    text-align: right;
+    font-size: 18px;
+}
+.stu-page .lists-student .list p{
+    color: #FF9200;
+}
+.stu-page .lists-student .list p span{
+    color: #646464;
+}
+.enz-st{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.enz-st button{
+    padding: 5px 10px;
+    color: red;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Date Page */
+.date-page{
+    display: none;
+}
+.date-page header{
+    background-color: #00d807;
+}
+.date-page h2{
+    text-align: right;
+    color: #00d807;
+    margin: 20px;
+}
+.date-page .search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.date-page .search input{
+    width: 75%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid #737373;
+    border-radius: 39px;
+    font-size: 25px;
+}
+.date-page .search button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #737373;
+    border-radius: 50%;
+    font-size: 45px;
+    background-color: #fff;
+    color: #00d807;
+    cursor: pointer;
+}
+.date-page .dates{
+    padding: 5px;
+}
+.date-page .dates div{
+    width: 90%;
+    height: 70px;
+    border: 1px solid #00d807;
+    border-radius: 13px;
+    background-color: #fff;
+    line-height: 70px;
+    font-size: 25px;
+    color: #B4B4B4;
+    margin: 10px auto;
+    font-weight: 700;
+    cursor: pointer;
+}
+.dates button{
+    margin-right: 100px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #00d807;
+    color: #00d807;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* List HQ page */
+.list-hq{
+    display: none;
+}
+.list-hq header{
+    background-color: #00d807;
+}
+.list-hq .top-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.list-hq h2{
+    text-align: right;
+    margin: 15px;
+    color: #00d807;
+}
+.info-st-container .info-st{
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-st-container .info-st .info-st-names{
+    background-color: #fff;
+    height: 90%;
+    font-size: 23px;
+    flex-basis: 83%;
+    padding-top: 10px;
+    border: 1px solid #707070;
+}
+.info-st-names span{
+    color: #00d807;
+    padding:  0 10px;
+}
+.info-st-container .info-st button{
+    flex-basis: 12%;
+    height: 90%;
+    font-size: 20px;
+    background-color: #fff;
+    color: #00d807;
+    border: 1px solid #707070;
+}
+.active-page{
+    display: block;
+}
